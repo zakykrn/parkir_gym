@@ -1,0 +1,10 @@
+# Files yang tidak perlu di-deploy ke Vercel
+jalankan.bat
+*.md
+.git
+.gitignore
+README.md
+README_ADMIN.md
+ADMIN_PANEL_SUMMARY.md
+DEPLOYMENT_GUIDE.md
+
