@@ -4,6 +4,11 @@ use App\Http\Controllers\ParkirController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
+// Health check route (untuk Railway)
+Route::get('/health', function () {
+    return response()->json(['status' => 'ok'], 200);
+});
+
 // Public routes
 Route::get('/', [ParkirController::class, 'index'])->name('home');
 
